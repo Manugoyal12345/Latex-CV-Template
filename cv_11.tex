@@ -1,0 +1,459 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cies Resume/CV
+% LaTeX Template
+% Version 1.1 (20/7/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Cies Breijs (cies@kde.nl)
+% https://github.com/cies/resume with extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%    PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper]{article} % Font size (10-12pt) and paper size (a4paper, letterpaper, legalpaper, etc)
+\usepackage{filecontents}
+\usepackage[numbers]{natbib}
+
+\begin{filecontents}{Ref.bib}
+	@article{goyal2018robust,
+		title={Robust methods for real-time diabetic foot ulcer detection and localization on mobile devices},
+		author={Goyal, Manu and Reeves, Neil D and Rajbhandari, Satyan and Yap, Moi Hoon},
+		journal={IEEE journal of biomedical and health informatics},
+		volume={23},
+		number={4},
+		pages={1730--1741},
+		year={2018},
+		publisher={IEEE}
+	}
+	@inproceedings{goyal2017fully,
+		title={Fully convolutional networks for diabetic foot ulcer segmentation},
+		author={Goyal, Manu and Yap, Moi Hoon and Reeves, Neil D and Rajbhandari, Satyan and Spragg, Jennifer},
+		booktitle={2017 IEEE International Conference on Systems, Man, and Cybernetics (SMC)},
+		pages={618--623},
+		year={2017},
+		organization={IEEE}
+	}
+	@article{goyal2020recognition,
+		title={Recognition of ischaemia and infection in diabetic foot ulcers: Dataset and techniques},
+		author={Goyal, Manu and Reeves, Neil D and Rajbhandari, Satyan and Ahmad, Naseer and Wang, Chuan and Yap, Moi Hoon},
+		journal={Computers in Biology and Medicine},
+		pages={103616},
+		year={2020},
+		publisher={Elsevier}
+	}
+	@article{goyal2018dfunet,
+		title={Dfunet: Convolutional neural networks for diabetic foot ulcer classification},
+		author={Goyal, Manu and Reeves, Neil D and Davison, Adrian K and Rajbhandari, Satyan and Spragg, Jennifer and Yap, Moi Hoon},
+		journal={IEEE Transactions on Emerging Topics in Computational Intelligence},
+		year={2018},
+		publisher={IEEE}
+	}
+	@article{goyal2017multi,
+		title={Multi-class semantic segmentation of skin lesions via fully convolutional networks},
+		author={Goyal, Manu and Hassanpour, Saeed and Yap, Moi Hoon},
+		journal={Biostec},
+		year={2020}
+	}
+	@article{goyal2019artificial,
+		title={Artificial Intelligence for Diagnosis of Skin Cancer: Challenges and Opportunities},
+		author={Goyal, Manu and Knackstedt, Thomas and Yan, Shaofeng and Hassanpour, Saeed},
+		journal={arXiv preprint arXiv:1911.11872},
+		year={2019}
+	}
+	@Article{goyalartificial,
+		author  = {Goyal, Manu},
+		title   = {Artificial intelligence in dermatology},
+		journal = {DermNet NZ},
+		url     = {https://www.dermnetnz.org/topics/artificial-intelligence/},
+	}
+	@article{goyal2019skin,
+		title={Skin Lesion Segmentation in Dermoscopic Images with Ensemble Deep Learning Methods},
+		author={Goyal, Manu and Oakley, Amanda and Bansal, Priyanka and Dancey, Darren and Yap, Moi Hoon},
+		journal={IEEE Access},
+		year={2019},
+		publisher={IEEE}
+	}
+	@inproceedings{hua2019effect,
+		title={The effect of color constancy algorithms on semantic segmentation of skin lesions},
+		author={hua Ng, Jia and Goyal, Manu and Hewitt, Brett and Yap, Moi Hoon},
+		booktitle={Medical Imaging 2019: Biomedical Applications in Molecular, Structural, and Functional Imaging},
+		volume={10953},
+		pages={109530R},
+		year={2019},
+		organization={International Society for Optics and Photonics}
+	}
+	@inproceedings{goyal2019skin,
+		title={Skin lesion boundary segmentation with fully automated deep extreme cut methods},
+		author={Goyal, Manu and Ng, Jiahua and Oakley, Amanda and Yap, Moi Hoon},
+		booktitle={Medical Imaging 2019: Biomedical Applications in Molecular, Structural, and Functional Imaging},
+		volume={10953},
+		pages={109530Q},
+		year={2019},
+		organization={International Society for Optics and Photonics}
+	}
+	@article{goyal2018region,
+		title={Region of Interest Detection in Dermoscopic Images for Natural Data-augmentation},
+		author={Goyal, Manu and Hassanpour, Saeed and Yap, Moi Hoon},
+		journal={arXiv preprint arXiv:1807.10711},
+		year={2018}
+	}
+	@article{yap2018breast,
+		title={Breast ultrasound lesions recognition: end-to-end deep learning approaches},
+		author={Yap, Moi Hoon and Goyal, Manu and Osman, Fatima M and Mart{\'\i}, Robert and Denton, Erika and Juette, Arne and Zwiggelaar, Reyer},
+		journal={Journal of Medical Imaging},
+		volume={6},
+		number={1},
+		pages={011007},
+		year={2018},
+		publisher={International Society for Optics and Photonics}
+	}
+	@inproceedings{yap2018end,
+		title={End-to-end breast ultrasound lesions recognition with a deep learning approach},
+		author={Yap, Moi Hoon and Goyal, Manu and Osman, Fatima and Ahmad, Ezak and Mart{\'\i}, Robert and Denton, Erika and Juette, Arne and Zwiggelaar, Reyer},
+		booktitle={Medical Imaging 2018: Biomedical Applications in Molecular, Structural, and Functional Imaging},
+		volume={10578},
+		pages={1057819},
+		year={2018},
+		organization={International Society for Optics and Photonics}
+	}
+	@article{yap2020breast,
+		title={Breast Ultrasound Region of Interest Detection and Lesion Localisation},
+		author={Yap, Moi Hoon and Goyal, Manu and Osman, Fatima M and Mart{\'\i}, Robert and Denton, Erika and Juette, Arne and Zwiggelaar, Reyer},
+		journal={Artificial Intelligence in Medicine},
+		year={2020},
+		publisher={Elsevier}
+	}
+	@phdthesis{shaubari2018automatic,
+		title={Automatic segmentation of the human thigh muscles in magnetic resonance imaging},
+		author={Shaubari, Ezak Fadzrin Ahmad},
+		year={2018},
+		school={Manchester Metropolitan University}
+	}
+\end{filecontents}
+
+\include{structure} % Include structure.tex which contains packages and document layout definitions
+
+\hyphenation{Some-long-word} % Specify custom hyphenation points in words with dashes where you would like hyphenation to occur, or alternatively, don't put any dashes in a word to stop hyphenation altogether
+
+\begin{document} 
+	
+	%----------------------------------------------------------------------------------------
+	%    NAME AND CONTACT INFORMATION
+	%----------------------------------------------------------------------------------------
+	
+	\maintitle{Manu Goyal}{} % Your name and date of birth or subtitle
+	
+	\noindent Postdoctoral Research Associate in Medical Imaging at Dartmouth College, USA \\
+	Contact: \href{mailto:manugoyal09@gmail.com.com}{manugoyal09@gmail.com}\bull % Your email address
+	\textsmaller{+}16036789293\bull  \textit{manu.goyal4(Skype)}\\ % Your phone number(s) and Skype username
+	Department of Biomedical Data Science, 1 Medical Centre, Lebanon, NH, 03766, USA % Your address
+	
+	\spacedhrule{0.9em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+	
+	%----------------------------------------------------------------------------------------
+	%    SUMMARY SECTION
+	%----------------------------------------------------------------------------------------
+	
+	\roottitle{Summary} % Root section title
+	
+	\inlineheadsection 
+	{A talented, passionate and self-motivated computer vision scientist.} 
+	{Ph.D. in Computer Vision and M.S in Computer Applications. Proficient in Image Processing, Computer Vision, Deep Learning and Medical Imaging.}
+	
+	
+	%------------------------------------------------
+	
+	\spacedhrule{1.2em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+	
+	%----------------------------------------------------------------------------------------
+	%    SKILLS SECTION
+	%----------------------------------------------------------------------------------------
+	
+	\roottitle{Skills} % Top level section
+	
+	
+	
+	
+	
+	%------------------------------------------------
+	
+	
+	\inlineheadsection 
+	{Techinal Specialities:}
+	{Applied Machine Learning, Regression, Basic Image Processing Techniques, Machine Learning, Computer Vision, Deep Learning (Caffe, TensorFlow, PyTorch), Interactive Data Visualization, Clustering Algorithms, Bio-inspired Optimization Algorithms, Internet of Things (Arduino and Sensors)}
+	
+	%------------------------------------------------
+	\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+	{Programming:}
+	{MATLAB, Python (Pandas, Matplotlib, NumPy, Sci-kit), OpenCV, R, Android software development and familiar with C++, Java, HTML, and CSS.}
+	
+	\spacedhrule{1.4em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+	
+	%----------------------------------------------------------------------------------------
+	%    EXPERIENCE SECTION
+	%----------------------------------------------------------------------------------------
+	
+	\roottitle{Experience} % Top level section
+	
+	\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+	{\href{https://home.dartmouth.edu}{Dartmouth College}}
+	{\textsc{Hanover, NH, USA}} {
+		
+		\headedsubsection % Job title entry for the current employer
+		{\acr{Postdoctoral Research} Associate}
+		{Sep '19 -- }
+		{\bodytext{I am currently working as a postdoctoral at Biomedical Data Science Department, Dartmouth College. At the moment, I am working on mainly three medical imaging projects that are recognition of skin cancer on dermoscopic and clinical images, bladder cancer detection on histopathological images and free air detection on chest radiographs.}}
+	}
+	
+	
+	\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+	{\href{http://www.mmu.ac.uk}{Manchester Metropolitan University}}
+	{\textsc{Manchester, United Kingdom}} {
+		
+		\headedsubsection % Job title entry for the current employer
+		{\acr{Research} Scholar}
+		{Sep '16 -- Aug '19}
+		{\bodytext{I worked in the number of part-time medical imaging projects, including detecting melanoma and other skin cancers in dermoscopic images and breast cancer in ultrasound images during my Ph.D. Further details of my Ph.D. project and these part-time projects is provided in the projects section.}}
+	}
+	
+	%------------------------------------------------
+	
+	\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+	{\href{https://www.ptu.ac.in/}{Punjab Technical University}}
+	{\textsc{Jalandhar (\acr{Punjab}), \acr{India}}} {
+		
+		\headedsubsection % Job title entry for the current employer
+		{\acr{Assistant} Professor}
+		{September '12 -- August '16}
+		{\bodytext{I taught various computer courses such as Simulation Theory, Soft Computing, C++ and Java programming, operating system, and database management system to the graduate students. I acted as supervisor and co-supervisor to the post-graduate students on different multidisciplinary research projects such as Routing protocols in Wireless Sensor Networks and Sensors for the Internet of Things.}}
+	}
+	
+	%------------------------------------------------
+	
+	
+	%------------------------------------------------
+	
+	\begin{center}
+		\textit{Please refer to \href{http://www.linkedin.com/in/manu-goyal-b998a051}{My Linkedin profile} for complete list of work experiences along with recommendations}
+	\end{center}
+	
+	%------------------------------------------------
+	
+	\spacedhrule{-0.2em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+	
+	
+	
+	%----------------------------------------------------------------------------------------
+	%    PROJECTS SECTION
+	%----------------------------------------------------------------------------------------
+	
+	\roottitle{Publications}    
+	\inlineheadsection
+	{Published papers in leading \href{https://ieeexplore.ieee.org/document/8122675}{Conferences}, \href{https://ieeexplore.ieee.org/document/8456504}{IEEE} and \href{https://www.sciencedirect.com/science/article/pii/S0010482520300160?dgcid=rss_sd_all}{Elsevier} Journals}  %\href{https://ieeexplore.ieee.org/document/8456504}{IEEE JBHI}, \href{https://ieeexplore.ieee.org/document/8464076}{IEEE TETCI}, \href{https://ieeexplore.ieee.org/document/8122675}{IEEE SMC}, {IEEE ACCESS}.}
+	%{The details of all the projects in the separate document is enclosed with this CV}
+	
+	%------------------------------------------------
+	
+	\begin{center}
+		\textit{Please refer to \href{https://scholar.google.co.uk/citations?user=bYAYpskAAAAJ}{My Google Scholar} \& \href{https://www.researchgate.net/profile/Manu_Goyal9}{Researchgate profile} for complete list of my research papers. }
+	\end{center}
+	
+	%------------------------------------------------
+	
+	\spacedhrule{-0.2em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+	
+	%----------------------------------------------------------------------------------------
+	%    EDUCATION SECTION
+	%----------------------------------------------------------------------------------------
+	
+	\roottitle{Education} % Top level section
+	
+	\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+	{Manchester Metropolitan University}
+	{\textsc{Manchester, United Kingdom}} {
+		
+		\headedsubsection % Job title entry for the current employer
+		{Ph.D. in Computer Vision}
+		{2016 -- 2019}
+		
+	}
+	
+	%------------------------------------------------
+	
+	\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+	{Thapar University}
+	{\textsc{Patiala, India}} {
+		
+		\headedsubsection % Job title entry for the current employer
+		{Master in Technology in Computer Application \textnormal{(CGPA: 7.2)}}
+		{2010 -- 2012} {}
+	}
+	
+	%------------------------------------------------
+	
+	\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+	{Punjab Technical University}
+	{\textsc{Jalandhar, India}} {
+		
+		\headedsubsection % Job title entry for the current employer
+		{Bachelor of Technology in Computer Engineering \textnormal{(percentage: 71)}}
+		{2006 -- 2010} {}
+	}
+	
+	
+	
+	\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+	{Natural languages:}
+	{Punjabi \textit{(mother tongue)}, English \textit{(full professional proficiency)}, Hindi \textit{(full professional proficiency)}.}
+	
+	
+	
+	%------------------------------------------------
+	
+	\spacedhrule{1.6em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+	
+	%----------------------------------------------------------------------------------------
+	%    INTERESTS SECTION
+	%----------------------------------------------------------------------------------------
+	
+	\roottitle{Interests} % Top level section
+	
+	\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+	{Non-exhaustive and in alphabetical order:}
+	{Computer games, cooking, football, music, mobile applications, philosophy, software engineering, travel, typography (e.g., \ web design, \LaTeX)}
+	
+	%----------------------------------------------------------------------------------------
+	
+	\spacedhrule{1.6em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+	
+	\roottitle{Details of Referees} % Top level section
+	
+	\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+	{Dr. Moi Hoon Yap}
+	{Reader in Computer Vision, Manchester Metropolitan University, Manchester, UK.
+	Email: m.yap@mmu.ac.uk and Phone: +44 (0)161 247 1503}
+	
+	\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+	{Prof. Neil Reeves}
+	{Faculty Head of Research \& Knowledge Exchange, Manchester Metropolitan University. Email: n.reeves@mmu.ac.uk and Phone: +44 (0)161 247 5429}
+	
+	\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+	{Prof. Subhas Mukhopadhyay}
+	{School of Engineering, Macquarie University, NSW 2109, Australia. Email: subhas.mukhopadhyay@mq.edu.au and Phone: +61 2 9850 6510}
+	
+	\spacedhrule{1.6em}{0.8em} % Horizontal rule - the first bracket is whitespace before and the second is after
+	
+	
+	\maintitle{Research Projects}{} 
+	
+	\roottitle{Summary} % Root section title
+	
+	\inlineheadsection 
+	{I am currently working as a Postdoctoral Research Associate at Dartmouth College, USA} {I completed my P.hD. in Computer Vision from Manchester Metropolitan University. My Ph.D. title is 'Novel Computer Vision techniques for Recognition and Analysis of Diabetic Foot Ulcers'. Although during my Ph.D., I have also worked on other medical imaging projects: 1. Detection of Melanoma and other Skin Cancers; 2. Segmentation and Recognition of Breast Cancer on Ultrasound Images, 3. Segmentation of thigh muscles on MRI.} 
+	
+	%{With limited healthcare resources, periodic check-ups of doctors are not possible for each patient for the examination of abnormal skin lesions. The computer vision algorithms have the potential to deliver a paradigm shift in skin analysis care among patients, which represent a cost-effective, remote and convenient healthcare solution.}
+	
+	
+	%------------------------------------------------
+	
+	\spacedhrule{2em}{-0.6em} % Horizontal rule - the first bracket is whitespace before and the second is after
+	
+	%----------------------------------------------------------------------------------------
+	%    SKILLS SECTION
+	%----------------------------------------------------------------------------------------
+	
+	\roottitle{Diabetic Foot Ulcers} % Top level section
+	
+	
+	
+	
+	
+	%------------------------------------------------
+	
+	
+	\inlineheadsection 
+	{A Diabetic Foot Ulcer (DFU) is a frequent complication of diabetes mellitus.} {Since computerized methods in the current literature based on traditional machine learning and image processing are not robust enough to detect the DFU of various grades and stages. In this Ph.D. project, I have developed and established fully automatic computerized methods to recognize and analysis of DFU. Primary responsibilities and contributions of this project are mentioned below:} 
+	
+	%\headedsection  % Job title entry for the current employer
+	\begin{enumerate}
+		\item I worked with clinicians to clean the dataset and refine the expert annotations to perform three popular computer vision tasks for the medical imaging to establish a baseline for \textbf{DFU classification, segmentation, and localization}.
+		\item For \textbf{DFU classification}, I used the machine learning algorithms to extract the features for two classes i.e., DFU and healthy skin patches, to understand the differences in the computer vision perspective. I designed a novel deep learning classification framework is introduced - DFUNet, which outperformed the state-of-the-art traditional machine learning and deep learning methods \cite{goyal2018dfunet}.
+		\item For \textbf{DFU segmentation}, I proposed a two-tier transfer learning technique for deep learning segmentation methods for semantic segmentation of DFU and its surrounding skin, which is an important indicator for clinicians to assess the progress of DFU \cite{goyal2017fully}.
+		\item For \textbf{DFU Localization}, I used state-of-the-art deep learning localization methods on the DFU dataset of 1775 images and the FootSnap dataset. Then, I transfer the robust and lightweight models on mobile devices such as Nvidia Jetson TX2 and smart-phone android application for remote monitoring of DFU \cite{goyal2018robust}.
+		\item Finally, I used image processing techniques and machine learning algorithms to determine the important conditions that are \textbf{bacterial infection and ischemia} of DFU \cite{goyal2020recognition}.
+	\end{enumerate}    
+	
+	
+	\spacedhrule{-0.4em}{-0.6em} % Horizontal rule - the first bracket is whitespace before and the second is after
+	
+	
+	
+	%----------------------------------------------------------------------------------------
+	
+	\roottitle{Skin Cancer} % Top level section
+	
+	
+	
+	
+	
+	%------------------------------------------------
+	
+	
+	\inlineheadsection 
+	{Skin cancer is the most common cancer among all other cancers.} {I worked part-time on this project with the collaboration of \href{https://www.dermnetnz.org/} {DermaNetNZ} for the exchange of knowledge and data. In this project, I have developed deep learning methods for segmentation and multi-class classification to detect skin cancers. Primary responsibilities of this project are mentioned below:} 
+	
+	%\headedsection  % Job title entry for the current employer
+	\begin{enumerate}
+		\item I designed the deep ensemble methods based on Mask RCNN and DeeplabV3+ to provide precise segmentation annotations of skin lesions \cite{goyal2019skin}.
+		\item I used image processing techniques and deep learning algorithms for the segmentation of skin lesions \cite{goyal2019skin, hua2019effect}.  
+		\item I utilized pixel-wise classification networks to provide lesion diagnosis \cite{goyal2017multi}.
+		\item I reviewed the studies that have claimed their AI algorithms match or exceed the performance of dermatologists for the diagnosis of skin cancer across all diagnostic image modalities and presented the technical challenges and new opportunities \cite{goyalartificial, goyal2019artificial}.
+		\item I developed deep learning algorithms for ROI detection algorithms for skin lesions. I demonstrated the potential of my work by developing a natural data-augmentation technique and a real-time mobile application for automated skin lesions detection \cite{goyal2018region}.
+		
+	\end{enumerate}    
+	
+	
+	\spacedhrule{-0.4em}{-0.6em}% Horizontal rule - the first bracket is whitespace before and the second is after%    EXPERIENCE SECTION
+	%----------------------------------------------------------------------------------------
+	
+	%----------------------------------------------------------------------------------------
+	
+	\roottitle{Breast Cancer and Human Thigh Muscles} % Top level section
+	
+	
+	
+	
+	
+	%------------------------------------------------
+	
+	
+	\inlineheadsection 
+	{Breast cancer is the most common cancer in the UK} {I worked part-time on these projects with my supervisor and colleagues on these projects. My contributions to these projects were mainly on developing machine learning algorithms.} 
+	
+	%\headedsection  % Job title entry for the current employer
+	\begin{enumerate}
+		\item We used the end-to-end deep learning approaches using Fully Convolutional Networks (FCNs), namely FCN-AlexNet, FCN-32s, FCN-16s, and FCN-8s, to determine the benign and cancerous breast lesions \cite{yap2018end, yap2018breast}.
+		\item We used transfer learning and propose a new 3-channel artificial RGB method for breast ultrasound ROI detection and lesion localisation \cite{yap2020breast}. 
+		\item We worked on deep learning solutions for MRI thigh quadriceps segmentation \cite{shaubari2018automatic}.
+	\end{enumerate}    
+	
+	
+	\spacedhrule{-0.4em}{-0.6em}% Horizontal rule - the first bracket is whitespace before and the second is after%    EXPERIENCE SECTION
+	%----------------------------------------------------------------------------------------
+	
+	\bibliographystyle{unsrt}
+	\bibliography{Ref}
+	
+	\spacedhrule{0.6em}{-0.6em}% Horizontal rule - the first bracket is whitespace before and the second is after
+	
+\end{document}
