@@ -1,0 +1,98 @@
+\begin{thebibliography}{10}
+
+\bibitem{goyal2018dfunet}
+Manu Goyal, Neil~D Reeves, Adrian~K Davison, Satyan Rajbhandari, Jennifer
+  Spragg, and Moi~Hoon Yap.
+\newblock Dfunet: Convolutional neural networks for diabetic foot ulcer
+  classification.
+\newblock {\em IEEE Transactions on Emerging Topics in Computational
+  Intelligence}, 2018.
+
+\bibitem{goyal2017fully}
+Manu Goyal, Moi~Hoon Yap, Neil~D Reeves, Satyan Rajbhandari, and Jennifer
+  Spragg.
+\newblock Fully convolutional networks for diabetic foot ulcer segmentation.
+\newblock In {\em 2017 IEEE International Conference on Systems, Man, and
+  Cybernetics (SMC)}, pages 618--623. IEEE, 2017.
+
+\bibitem{goyal2018robust}
+Manu Goyal, Neil~D Reeves, Satyan Rajbhandari, and Moi~Hoon Yap.
+\newblock Robust methods for real-time diabetic foot ulcer detection and
+  localization on mobile devices.
+\newblock {\em IEEE journal of biomedical and health informatics},
+  23(4):1730--1741, 2018.
+
+\bibitem{goyal2020recognition}
+Manu Goyal, Neil~D Reeves, Satyan Rajbhandari, Naseer Ahmad, Chuan Wang, and
+  Moi~Hoon Yap.
+\newblock Recognition of ischaemia and infection in diabetic foot ulcers:
+  Dataset and techniques.
+\newblock {\em Computers in Biology and Medicine}, page 103616, 2020.
+
+\bibitem{goyal2019skin}
+Manu Goyal, Amanda Oakley, Priyanka Bansal, Darren Dancey, and Moi~Hoon Yap.
+\newblock Skin lesion segmentation in dermoscopic images with ensemble deep
+  learning methods.
+\newblock {\em IEEE Access}, 2019.
+
+\bibitem{hua2019effect}
+Jia hua Ng, Manu Goyal, Brett Hewitt, and Moi~Hoon Yap.
+\newblock The effect of color constancy algorithms on semantic segmentation of
+  skin lesions.
+\newblock In {\em Medical Imaging 2019: Biomedical Applications in Molecular,
+  Structural, and Functional Imaging}, volume 10953, page 109530R.
+  International Society for Optics and Photonics, 2019.
+
+\bibitem{goyal2017multi}
+Manu Goyal, Saeed Hassanpour, and Moi~Hoon Yap.
+\newblock Multi-class semantic segmentation of skin lesions via fully
+  convolutional networks.
+\newblock {\em Biostec}, 2020.
+
+\bibitem{goyalartificial}
+Manu Goyal.
+\newblock Artificial intelligence in dermatology.
+\newblock {\em DermNet NZ}.
+
+\bibitem{goyal2019artificial}
+Manu Goyal, Thomas Knackstedt, Shaofeng Yan, and Saeed Hassanpour.
+\newblock Artificial intelligence for diagnosis of skin cancer: Challenges and
+  opportunities.
+\newblock {\em arXiv preprint arXiv:1911.11872}, 2019.
+
+\bibitem{goyal2018region}
+Manu Goyal, Saeed Hassanpour, and Moi~Hoon Yap.
+\newblock Region of interest detection in dermoscopic images for natural
+  data-augmentation.
+\newblock {\em arXiv preprint arXiv:1807.10711}, 2018.
+
+\bibitem{yap2018end}
+Moi~Hoon Yap, Manu Goyal, Fatima Osman, Ezak Ahmad, Robert Mart{\'\i}, Erika
+  Denton, Arne Juette, and Reyer Zwiggelaar.
+\newblock End-to-end breast ultrasound lesions recognition with a deep learning
+  approach.
+\newblock In {\em Medical Imaging 2018: Biomedical Applications in Molecular,
+  Structural, and Functional Imaging}, volume 10578, page 1057819.
+  International Society for Optics and Photonics, 2018.
+
+\bibitem{yap2018breast}
+Moi~Hoon Yap, Manu Goyal, Fatima~M Osman, Robert Mart{\'\i}, Erika Denton, Arne
+  Juette, and Reyer Zwiggelaar.
+\newblock Breast ultrasound lesions recognition: end-to-end deep learning
+  approaches.
+\newblock {\em Journal of Medical Imaging}, 6(1):011007, 2018.
+
+\bibitem{yap2020breast}
+Moi~Hoon Yap, Manu Goyal, Fatima~M Osman, Robert Mart{\'\i}, Erika Denton, Arne
+  Juette, and Reyer Zwiggelaar.
+\newblock Breast ultrasound region of interest detection and lesion
+  localisation.
+\newblock {\em Artificial Intelligence in Medicine}, 2020.
+
+\bibitem{shaubari2018automatic}
+Ezak Fadzrin~Ahmad Shaubari.
+\newblock {\em Automatic segmentation of the human thigh muscles in magnetic
+  resonance imaging}.
+\newblock PhD thesis, Manchester Metropolitan University, 2018.
+
+\end{thebibliography}
